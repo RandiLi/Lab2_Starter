@@ -8,6 +8,7 @@
     <body>
         <header>
             <h1>Team Meeting</h1>
+            <br>
             <details>
                 <summary><h2>Index</h2></summary>
                 <nav>
@@ -16,15 +17,14 @@
                     <h3 style="margin-left:50px;"><a href="#agends">Agenda</a></h3>
                     <h3 style="margin-left:50px;"><a href="#old">Unconducted Business</a></h3>
                     <h3 style="margin-left:50px;"><a href="#new">New Business</a></h3>
-                    <h3 style="margin-left:50px;"><a href=#misc">Miscellaneous</a></h3>
+                    <h3 style="margin-left:50px;"><a href="#misc">Miscellaneous</a></h3>
                     <h3 style="margin-left:50px;"><a href="#imgs">Relevant Images</a></h3>
-                    <h3 style="margin-left:50px;">Audio Recording</h3>
-                    <h3 style="margin-left:50px;">Video Recording</h3>
+                    <h3 style="margin-left:50px;"><a href="#audio">Audio Recording</a></h3>
+                    <h3 style="margin-left:50px;"><a href="#video">Video Recording</a></h3>
                 </nav>
             </details>
         </header>
         <hr>
-        <br>
         <main>
             <section>
                 <h2 id="info">Basic Information</h2>
@@ -89,6 +89,24 @@
                         <li>Has anyone seen Anon's dog?</li>
                         <li>Anon Absent will not be present next meeting, either</li>
                     </ul>
+                    <form action="" method="get">
+                        <label for="option">Submit a :</label>
+                        <select name="options" id="option">
+                            <option value="comment">Comment</option>
+                            <option value="request">Request</option>
+                            <option value="review">Review</option>
+                            <option value="suggestion">Suggestion</option>
+                        </select>
+                        <textarea id="txt" name="txt" rows="4" cols="50">Say anything!</textarea>
+                        <label for="identity">You are a:</label>
+                        <input list="identities" name="identity" id="identity">
+                        <datalist id="identities">
+                            <option value="Student">
+                            <option value="Professor">
+                            <option value="TA">
+                        </datalist>
+                    </form>
+                    <button type="button">Submit!</button>
             </section>
             <hr>
             <section>
@@ -96,6 +114,19 @@
                     <img class="fit-picture" src="/images/dog.jpg" alt="Anon's dog">
             </section>
             <hr>
+            <section>
+                <h2 id="audio">Audio Recording</h2>
+                    <audio controls>
+                        <source src="/media/audio.mp3" type="audio/mp3g">
+                    </audio>
+            </section>
+            <hr>
+            <section>
+                <h2 id="video">Video Recording</h2>
+                    <video width="640" height="360" controls>
+                        <source src="/media/video.mp4" type="video/mp4">
+                    </video>
+            </section>
         </main>
     </body>
 </html>
